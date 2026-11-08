@@ -228,6 +228,7 @@ export const services = [
     name: 'Pickleball Court Flooring',
     category: 'Sports Flooring',
     image: '/images/court-outdoor.jpg',
+    video: '/videos/pickleball-rally.mp4',
     short: 'Acrylic pickleball surfacing — weather-resistant, excellent traction, UV-stable. From backyard courts to full-scale facilities.',
     intro: [
       'Whether you’re designing a backyard pickleball court or a full-scale sports facility, flooring plays a critical role. Selecting flooring affects safety, comfort and the player experience.',

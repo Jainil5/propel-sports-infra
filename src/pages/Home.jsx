@@ -11,11 +11,8 @@ const ease = [0.22, 1, 0.36, 1]
 
 function Hero() {
   const ref = useRef(null)
-  const rallyRef = useRef(null)
-  const courtRef = useRef(null)
+  const videoRef = useRef(null)
   const reduce = useReducedMotion()
-  const [isMobile] = useState(() => window.matchMedia('(max-width: 640px)').matches)
-  const [phase, setPhase] = useState(isMobile ? 'court' : 'rally')
   const [videoOk, setVideoOk] = useState(true)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
   const imgY = useTransform(scrollYProgress, [0, 1], ['0%', '22%'])
@@ -23,15 +20,8 @@ function Hero() {
 
   useEffect(() => {
     if (reduce || !videoOk) return
-    if (phase === 'rally') {
-      courtRef.current?.pause()
-      rallyRef.current?.play().catch(() => {})
-      const t = setTimeout(() => setPhase('court'), 8000)
-      return () => clearTimeout(t)
-    }
-    rallyRef.current?.pause()
-    courtRef.current?.play().catch(() => {})
-  }, [phase, reduce, videoOk])
+    videoRef.current?.play().catch(() => {})
+  }, [reduce, videoOk])
 
   const lines = [
     <>Surfaces that</>,
@@ -44,32 +34,21 @@ function Hero() {
         <motion.div
           className="hero-focus"
           initial={{ scale: 1.04, filter: 'blur(8px)' }}
-          animate={{ scale: phase === 'court' ? 1.14 : 1.04, filter: 'blur(0px)' }}
-          transition={{ scale: { duration: 12, ease: 'easeOut' }, filter: { duration: 1.6, delay: 0.2, ease: 'easeOut' } }}
+          animate={{ scale: 1.14, filter: 'blur(0px)' }}
+          transition={{ scale: { duration: 16, ease: 'easeOut' }, filter: { duration: 1.6, delay: 0.2, ease: 'easeOut' } }}
         >
-          <img className="hero-poster" src="/images/court-outdoor.jpg" alt="Outdoor pickleball court during open play" />
+          <img className="hero-poster" src="/images/track-hero.jpg" alt="Red synthetic running track with white lane lines" />
           {videoOk && !reduce && (
-            <>
-              <video
-                ref={rallyRef}
-                className={`hero-video${phase === 'rally' ? ' on' : ''}`}
-                autoPlay muted loop playsInline preload="auto"
-                onError={(e) => { if (e.target === e.currentTarget) setVideoOk(false) }}
-                aria-hidden="true" tabIndex={-1}
-              >
-                <source src="/videos/pickleball-rally.mp4" type="video/mp4" />
-              </video>
-              <video
-                ref={courtRef}
-                className={`hero-video${phase === 'court' ? ' on' : ''}`}
-                muted loop playsInline preload="metadata"
-                onError={(e) => { if (e.target === e.currentTarget) setVideoOk(false) }}
-                aria-hidden="true" tabIndex={-1}
-              >
-                <source src="/videos/pickleball-court.mp4#t=2,22" type="video/mp4" media="(min-width: 641px)" />
-                <source src="/videos/pickleball-court-mobile.mp4#t=2,22" type="video/mp4" />
-              </video>
-            </>
+            <video
+              ref={videoRef}
+              className="hero-video on"
+              autoPlay muted loop playsInline preload="auto"
+              onError={(e) => { if (e.target === e.currentTarget) setVideoOk(false) }}
+              aria-label="Sports surfaces showcase: running track, acrylic courts, football turf and EPDM play areas"
+              tabIndex={-1}
+            >
+              <source src="/videos/surfaces-hero.mp4" type="video/mp4" />
+            </video>
           )}
         </motion.div>
       </motion.div>
@@ -83,7 +62,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
         >
-          <i /> Live pickleball · open court
+          <i /> Live · engineered surface systems
         </motion.span>
         <motion.span
           className="eyebrow"

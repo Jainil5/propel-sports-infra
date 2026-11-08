@@ -81,7 +81,11 @@ export function CatalogDetail({ type }) {
             </div>
           </Reveal>
           <Reveal className="detail-hero-media" delay={0.15}>
-            <img src={item.image} alt={item.name} />
+            {item.video ? (
+              <video src={item.video} poster={item.image} autoPlay muted loop playsInline aria-label={`${item.name} in play`} />
+            ) : (
+              <img src={item.image} alt={item.name} />
+            )}
           </Reveal>
         </div>
       </section>
