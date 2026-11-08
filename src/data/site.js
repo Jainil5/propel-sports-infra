@@ -10,6 +10,13 @@ export const brand = {
   hours: 'Mon – Sat, 8:30 am – 7:30 pm',
 }
 
+export const studio = {
+  name: 'Website & Intelligence',
+  url: 'https://websitein.com/',
+  email: 'mail.websitein@gmail.com',
+  phone: '+91 82388 89347',
+}
+
 export const stats = [
   { value: 15, suffix: '+', label: 'Nations using our products' },
   { value: 50, suffix: '+', label: 'Product basket' },

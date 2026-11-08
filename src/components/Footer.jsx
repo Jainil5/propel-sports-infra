@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { brand, offices } from '../data/site'
+import { brand, offices, studio } from '../data/site'
 import { services } from '../data/services'
 import { products } from '../data/products'
 
@@ -53,6 +53,15 @@ export default function Footer() {
         </div>
 
         <div className="footer-word" aria-hidden="true">Propel</div>
+
+        <div className="footer-credit">
+          <span>Designed &amp; Developed by</span>
+          <a href={studio.url} target="_blank" rel="noreferrer" className="credit-name">{studio.name}</a>
+          <span className="credit-sep" aria-hidden="true">·</span>
+          <a href={`mailto:${studio.email}`}>{studio.email}</a>
+          <span className="credit-sep" aria-hidden="true">·</span>
+          <a href={`tel:${studio.phone.replace(/[^+\d]/g, '')}`}>{studio.phone}</a>
+        </div>
 
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} {brand.legal}. All rights reserved.</span>

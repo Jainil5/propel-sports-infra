@@ -3,7 +3,7 @@ export const products = [
     slug: 'commercial-gym-rubber-roll',
     name: 'Gym Rubber Roll',
     category: 'Gym Flooring',
-    image: '/images/gym-dark.jpg',
+    image: '/images/products/gym-rubber-roll.jpg',
     short: 'High-quality rubber rolls for gyms, aerobics studios, shopping malls and kindergartens — durable, weather-proof, slip-resistant.',
     intro: [
       'We pride ourselves on being a top Gym Rubber Roll manufacturer in India. Our vision is to create high-quality rubber rolls meant for various purposes such as gyms, aerobics studios, shopping malls and kindergartens.',
@@ -31,7 +31,7 @@ export const products = [
     slug: 'gym-rubber-tiles',
     name: 'Gym Rubber Tiles',
     category: 'Gym Flooring',
-    image: '/images/gym-equipment.jpg',
+    image: '/images/products/gym-rubber-tiles.jpg',
     short: '100% recycled rubber tiles — elastic, anti-slip, durable. Designed to absorb falls from height and reduce injury risk.',
     intro: [
       'Our Gym Rubber Tiles are constructed to make your exercise room more attractive, safer and longer lasting. Made from top-grade rubber, they ensure excellent performance and safety anywhere.',
@@ -59,7 +59,7 @@ export const products = [
     slug: 'pu-binder',
     name: 'PU Binder',
     category: 'Binders & Coatings',
-    image: '/images/stadium-aerial.jpg',
+    image: '/images/products/pu-binder.jpg',
     short: 'One-component, moisture-curing, unpigmented PU binders — DESMOTOP-RR 2009 & RR 2008. Bonds rubber, gravel, metal and more.',
     intro: [
       'Since its invention, polyurethane has been one of the most important compounds, with numerous applications. A leading participant in coating and printing applications, polyurethane is known for its flexibility, strong chemical structure and user-friendly qualities.',
@@ -87,7 +87,7 @@ export const products = [
     slug: 'sidewalk-blocks-4x-5',
     name: 'Sidewalk Blocks 4″ × 5″',
     category: 'Rubber Products',
-    image: '/images/court-outdoor.jpg',
+    image: '/images/products/sidewalk-blocks.jpg',
     short: '100% recycled-rubber sidewalk mats — instant access for wheelchairs, walkers, bikes and pedestrians. Won’t crack from frost heave.',
     intro: [
       'Propel Sidewalk Tiles provide immediate access once installed, accommodating all wheelchair, walker, bicycle and pedestrian traffic. The manageable format allows very simple and quick installation for any project type.',
@@ -115,7 +115,7 @@ export const products = [
     slug: 'desmotop-c300-polyurethane',
     name: 'DESMOTOP C300 Polyurethane',
     category: 'PU Systems',
-    image: '/images/track-hero.jpg',
+    image: '/images/products/desmotop-c300.jpg',
     short: 'Solvent-free, self-leveling 2K PU series for spray-coat, sandwich and full-PUR tracks — C301, C302, C303.',
     intro: [
       'The DESMOTOP C300 Polyurethane series is specially designed for athletic running track spray coat systems, sandwich systems and full PUR systems. It is a solvent-free, self-leveling two-component polyurethane with good elastic and tensile strength properties.',
@@ -143,7 +143,7 @@ export const products = [
     slug: 'desmotop-2k-polyurethane',
     name: 'DESMOTOP C200 Polyurethane',
     category: 'PU Systems',
-    image: '/images/runner.jpg',
+    image: '/images/products/desmotop-c200.jpg',
     short: 'Self-leveling 2K PU for indoor/outdoor sport & industrial floors — C201 football glue, C202 self-leveling, C203 pore filler, C204 topcoat.',
     intro: [
       'DESMOTOP 2K Polyurethane is solvent-free with good elastic and tensile strength properties. It is environment-friendly, flexible with high strength. The DESMOTOP C200 and C300 series are mainly used in floor coating for sports surfaces and industrial use.',
@@ -171,7 +171,7 @@ export const products = [
     slug: 'epdm-rubber-granules',
     name: 'EPDM Rubber Granules',
     category: 'Rubber Products',
-    image: '/images/basketball.jpg',
+    image: '/images/products/epdm-granules.jpg',
     short: 'Durable, resilient EPDM with ≥24% real EPDM content, super UV & weathering resistance. 22 standard colours, combinable without limits.',
     intro: [
       'EPDM colored granules (ethylene propylene diene monomer) are durable, resilient, super UV & weathering resistant, eco-friendly and elastic materials ideal for synthetic surfacing. Surfaces produced by EPDM granules are ideal for indoor and outdoor installations where physical sports activities take place, such as kids’ play areas and athletic running tracks.',
@@ -199,7 +199,7 @@ export const products = [
     slug: 'acrytop-deep-seal',
     name: 'Acrytop Deep Seal',
     category: 'Acrylic Systems',
-    image: '/images/tennis.jpg',
+    image: '/images/products/acrytop-deep-seal.jpg',
     short: 'High-strength acrylic cement modifier — fast-curing, hard, tough, durable patches. No asbestos, lead or mercury. 0 g/L VOC.',
     intro: [
       'ACRYTOP Deep Seal is a high-strength acrylic cement modifier. An advantage of using Deep Seal is that it cures quickly, making a hard, tough and durable patch. It does not contain asbestos, lead or mercury.',
@@ -227,7 +227,7 @@ export const products = [
     slug: 'pp-interlocking-tiles',
     name: 'PP Interlocking Tiles',
     category: 'Modular Tiles',
-    image: '/images/court-outdoor.jpg',
+    image: '/images/products/pp-tiles.jpg',
     short: 'Modified PP tiles with unique locking — no adhesives, ≥95% rebound, 150 kN rolling load, 10–12 year warranty.',
     intro: [
       'Our PP interlocking tiles are made from high-quality PP (polypropylene) material. Connected using a unique locking mechanism, they are easy to install and remove, locking tightly to form a solid surface without the need for adhesives.',
